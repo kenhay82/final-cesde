@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/uikit.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css')}}">
+    <title>Kenay... Dogs Training</title>
+</head>
+
+<body>
+    <nav class=" uk-position-relative" uk-sticky="show-on-up: true" id="nav">
+        <div class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="/"><code>kenay,</code> help your dog?</a></li>
+                            <li>
+                                <a href="#">services</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <div>
+                                                    <li class="uk-nav-header">Health</li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#"><code>early</code> stimulation</a></li>
+                                                    <li><a href="#"><code>physical</code> therapy</a></li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <div>
+                                                    <li class="uk-nav-header">fitness</li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#"><code>physical</code> training</a></li>
+                                                    <li><a href="#"><code>cognitive</code> development</a></li>
+                                                    <li><a href="#"><code>NLM</code> learning</a></li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li>
+                                <a href="#">Products</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#"><code>Harness</code></a></li>
+                                                <li><a href="#"><code>Shoes</code></a></li>
+                                                <li><a href="#"><code>toys</code></a></li>
+                                                <li><a href="#"><code>accessories</code></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="/infodog"><span
+                                        uk-icon="icon: user; ratio: 1.3"></span>user<code>.Space</code></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block body %} {% endblock %}
+    <footer>
+        <div class="uk-section-default">
+            <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
+                style="background-image: url({{ url_for ('static',filename='img/nosePattern.jpeg')}})">
+                <div class="uk-section uk-light uk-background-cover">
+                    <div class="uk-container">
+                        <img src="" alt="" id="foo-back">
+                        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                            <div>
+                                <a href="#" class="uk-text-danger uk-text-large"><code>Support</code> us.</a>
+                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor.</p>
+                            </div>
+                            <div>
+                                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor.</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <div class="uk-flex uk-flex-center">
+                                        <a class="uk-button uk-button-primary uk-button-small uk-height-1-1 "
+                                            href="#content" uk-scroll>Scroll
+                                            up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static',filename='js/uikit.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/uikit-icons.min.js')}}"></script>
+</body>
+
+</html>

@@ -1,9 +1,10 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
-def home():
-    return 'My primera APP'
-
-@app.route('/index')
 def index():
-    return 'This is the index route.'
+    return render_template('index.html')
+
+@app.route('/infodog')
+def infodog():
+    return render_template('infodog.html')
