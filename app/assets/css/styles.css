@@ -5,4 +5,13 @@ code {
 #banner {
     min-height: 100vh;
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 20px;
+    padding: 10px;
 }
